@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nguyen Sy Huy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        :root {
+            --contact-font-size: 3rem;
+            --contact-margin: 0.3em;
+            --text-color: rgb(63, 63, 63);
+            --text-hover-color: rgb(0, 0, 0);
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: var(--text-color);
+            animation: zoomIn 0.2s linear forwards;
+        }
+
+        a:hover {
+            color: var(--text-hover-color);
+            animation: zoomOut 0.2s linear forwards;
+        }
+
+        .contact > a {
+            font-size: var(--contact-font-size);
+            margin: var(--contact-margin);
+        }
+
+        @media only screen and (max-width: 600px) {
+            .contact > a {
+                display: block;
+            }
+        }
+
+        @keyframes zoomOut {
+            from {}
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(1.2);
+            }
+            to {}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="contact">
+            <a href="tel:+84346162672 " target="_blank">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:huy2000@gmail.com" target="_blank">
+                <i class="fa-solid fa-at" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/huyhayhat.1505/" target="_blank">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/huyns20" target="_blank">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/huyns201020/" target="_blank">
+                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://huyns.fpt.dev" target="_blank">
+                <i class="fa-solid fa-link" aria-hidden="true"></i>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
